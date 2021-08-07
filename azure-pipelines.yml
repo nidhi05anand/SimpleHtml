@@ -1,4 +1,15 @@
 # HTML
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Free Trial(da352e34-3fda-45b0-bdf5-c3991d7416a4)'
+    subscriptionId: 'da352e34-3fda-45b0-bdf5-c3991d7416a4'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'DefaultResourceGroup-CUS'
+    location: 'Central India'
+    templateLocation: 'Linked artifact'
+    csmFile: 'test'
+    deploymentMode: 'Incremental'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
